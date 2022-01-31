@@ -1,0 +1,54 @@
+.Home
+{
+    display: flex;
+    flex-wrap: wrap;
+    color: #6b6f8b;
+    background-color: #e2e5ff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.Home_left, .Home_right
+{
+    margin: 100px;
+}
+
+.Home_right
+{
+    padding-top: 40px;
+}
+.Bug
+{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #e2e5ff;
+    border-radius: 50%;
+}
+.debugit_heading
+{
+    font-size: 3rem;
+}
+@media screen and (max-width: 700px)
+{
+    .Home_left, .Home_right
+    {
+        margin: 0px;
+    }
+    .Bug
+    {
+        height: 100px;
+        width: 100px;
+        border: 1px solid #e2e5ff;
+        border-radius: 50%;
+    }
+    .debugit_heading
+    {
+        font-size: 2.5rem;
+    }
+    .Home_right
+    {
+        padding-top: 40px;
+    }
+}

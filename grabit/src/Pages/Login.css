@@ -1,43 +1,37 @@
-.Login
+.Login, .Register
 {
-  color: #9ea0ab;
+  color: #6b6f8b;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f5eee0;
-  padding: 15%;
+  background-color: #e2e5ff;
+  padding: 20px;
 }
 
 .Forms
 {
   width: 300px;
-  border: 1px solid #f5eee0;
+  border: 1px solid #e2e5ff;
+  padding: 20px 5px;
   border-radius: 13px;
-  padding: 30px 10px;
-  background-color: #fafbff;
-background: #fafbff;
-box-shadow: inset 5px 5px 10px #d5d5d9,
+background: #f0f2ff;
+box-shadow: inset 5px 5px 10px #ccced9,
             inset -5px -5px 10px #ffffff;
 }
 
 .Forms input{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 12px;
     font-size: larger;
     border:1px solid #ccc;
-    border-radius: 10px;
-}
-
-.Forms label{
-  font-size: 1.2rem;
-  margin: 10px;
+    border-radius: 7px;
 }
 
 .Forms button{
   margin: 10px;
-  padding: 10px;
+  padding: 7px;
   font-size: large;
   border:1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 7px;
 }
