@@ -26,16 +26,18 @@ export default function item_list(props) {
   return (
     <div className='itemlist' style={{display : 'flex'}}>
             <NavLink to={`/${props.link}`} style={style} className = "Navlink" activeClassName='navlink_active'>
-              { props.id === "1" ? <span className='icon' style={style1}> <IoIosBug/></span> :
-                props.id === "2" ? <span className='icon' style={style1}> <MdSpaceDashboard/></span> :
-                props.id === "3" ? <span className='icon' style={style1}> <RiTeamFill/></span> :
-                props.id === "4" ? <span className='icon' style={style1}> <GiRaiseZombie/></span> :
-                props.id === "5" ? <span className='icon' style={style1}> <CgProfile/></span> :
-                props.id === "6" ? <span className='icon' style={style1}> <RiLockPasswordFill/></span> :
-                props.id === "7" ? <span className='icon' style={style1}> <FaSignOutAlt/></span> :
-                <span className='icon' style={style1}> <FaSignOutAlt/></span>
-              }
-              <span className='text'> {props.title} </span>
+              <li>
+                {
+                  props.id === "1" ? <span className='icon' style={style1}> <MdSpaceDashboard/></span> :
+                  props.id === "2" ? <span className='icon' style={style1}> <RiTeamFill/></span> :
+                  props.id === "3" ? <span className='icon' style={style1}> <GiRaiseZombie/></span> :
+                  props.id === "4" ? <span className='icon' style={style1}> <CgProfile/></span> :
+                  props.id === "5" ? <span className='icon' style={style1}> <RiLockPasswordFill/></span> :
+                  props.id === "6" ? <span className='icon' style={style1}> <FaSignOutAlt/></span> :
+                  <span className='icon' style={style1}> <FaSignOutAlt/></span>
+                }
+                <span className='text'> {props.title} </span>
+              </li>
             </NavLink>
     </div>
   )

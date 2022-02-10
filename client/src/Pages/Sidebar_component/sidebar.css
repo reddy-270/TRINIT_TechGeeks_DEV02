@@ -5,10 +5,14 @@
 
 .sidebar li
 {
+    left: 0;
     list-style: none;
-    border: 1px solid #999ec6;
+    border-bottom: 1px solid #999ec6;
+    border-top: 1px solid #999ec6;
+    border-left: 1px solid #999ec6;
+    border-radius: 50px 0px 0px 50px;
     padding:15px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 .sidebar li:hover
@@ -20,3 +24,17 @@
     cursor: pointer;
 }
 
+.title
+{
+    font-size: 2rem;
+    padding: 15px 15px 15px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title a
+{
+    text-decoration: none;
+    color: #f0f2ff;
+}

@@ -1,13 +1,25 @@
-.Navlink :active .text{
-  color: #c5ffdd;
+
+.Navlink 
+{
+  width: 100%;
+}
+.Navlink li
+{
+  width: 100%;
+}
+.navlink_active
+{
+  background-color: #f0f2ff;
+  color: #999ec6;
+  border-bottom: 1px solid #999ec6;
+  border-top: 1px solid #999ec6;
+  border-left: 1px solid #999ec6;
+  border-radius: 50px 0px 0px 50px;
+  cursor: pointer;
+  left: 0;
 }
 
-.Navlink:hover .icon
+.navlink_active .text, .navlink_active .icon
 {
-    color: #999ec6;
-}
-
-.Navlink:hover .text
-{
-    color: #999ec6;
+  color: #999ec6;
 }

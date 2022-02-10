@@ -1,16 +1,25 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Itemlist from './itemlist';
+
+import { IoIosBug } from "react-icons/io";
 import './sidebar.css';
 function sidebar() {
   return <div className='sidebar'>
-      <li style={{fontSize : '2rem'}}><Itemlist id = "1" link = {""} title = {"DeBugit"}/></li>
+      <div className="title">
+        <NavLink to="/dashboard">
+          <span className='icon'> <IoIosBug/></span>
+          <span className='text'> DeBugit </span>
+        </NavLink>
+      </div>
       <br/>
-      <li><Itemlist id = "2" link = {"dashboard"} title = {"Dashboard"} /></li>
-      <li><Itemlist id = "3" link = {"teambugs"} title = {"Team Bugs"} /></li>
-      <li><Itemlist id = "4" link = {"raisebugs"} title = {"Raise Bugs"} /></li>
-      <li><Itemlist id = "5" link = {"profile"} title = {"Profile"} /></li>
-      <li><Itemlist id = "6" link = {"changepass"} title = {"Password"} /></li>
-      <li><Itemlist id = "7" link = {"signout"}  title = {"Log Out"} /></li>
+      <br></br>
+      <Itemlist id = "1" link = {"dashboard"} title = {"Dashboard"} />
+      <Itemlist id = "2" link = {"teambugs"} title = {"Team Bugs"} />
+      <Itemlist id = "3" link = {"raisebugs"} title = {"Raise Bugs"} />
+      <Itemlist id = "4" link = {"profile"} title = {"Profile"} />
+      <Itemlist id = "5" link = {"changepass"} title = {"Password"} />
+      <Itemlist id = "6" link = {"signout"}  title = {"Log Out"} />
   </div>;
 }
 
