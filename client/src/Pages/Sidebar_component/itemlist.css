@@ -1,0 +1,13 @@
+.Navlink :active .text{
+  color: #c5ffdd;
+}
+
+.Navlink:hover .icon
+{
+    color: #999ec6;
+}
+
+.Navlink:hover .text
+{
+    color: #999ec6;
+}
