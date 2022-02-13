@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './Dashboard.css';
 import Sidebar from './Sidebar_component/sidebar';
+import Nav from './nav';
 function Dashboard() {
     
+  const [data, setData] = React.useState([]);
+  const [isLoading, setIsLoading] = React.useState(true);
+  // fetching data using the get request
+  useEffect(() => {
+    fetch('http://localhost:8080/api/v1/bugs/all', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + localStorage.getItem('token')
+      }
+    })
+    .then(response =>{
+      if(response.ok){
+        return response.json();
+      }
+      throw new Error('Network response was not ok.');
+    })
+    .then(data => {
+      setData(data);
+    })
+    .catch(error => console.log(error.message))
+    .finally(() => {
+      setIsLoading(false);
+    })
+
+  }, []);
   return (
+
       <div className="Dashboard">
         <div className='dashboard_body'>
           <div className='dashboard_body_side_bar'>
@@ -12,7 +40,9 @@ function Dashboard() {
           </div>
           <div className='dashboard_body_body'>
             <div>
-
+              <Nav/>
+              <br />
+              <br/>
             </div>
             <div>
               <h1>Pending Bugs</h1>

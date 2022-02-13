@@ -2,13 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Itemlist from './itemlist';
 
-import { IoIosBug } from "react-icons/io";
+import { FaBug } from "react-icons/fa";
 import './sidebar.css';
 function sidebar() {
   return <div className='sidebar'>
       <div className="title">
         <NavLink to="/dashboard">
-          <span className='icon'> <IoIosBug/></span>
+          <span className='icon'> <FaBug/></span>
+          <br />
           <span className='text'> DeBugit </span>
         </NavLink>
       </div>
