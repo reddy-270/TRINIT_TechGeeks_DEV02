@@ -26,6 +26,8 @@ export default function item_list(props) {
   return (
     <div className='itemlist' style={{display : 'flex'}}>
             <NavLink to={`/${props.link}`} style={style} className = "Navlink" activeClassName='navlink_active'>
+              <b></b>
+              <b></b>
               <li>
                 {
                   props.id === "1" ? <span className='icon' style={style1}> <MdSpaceDashboard/></span> :

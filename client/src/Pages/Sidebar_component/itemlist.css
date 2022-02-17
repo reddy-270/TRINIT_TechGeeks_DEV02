@@ -2,24 +2,78 @@
 .Navlink 
 {
   width: 100%;
+  position: relative;
 }
 .Navlink li
 {
   width: 100%;
+  position: relative;
+
 }
 .navlink_active
 {
-  background-color: #f0f2ff;
+  background-color: white;
   color: #999ec6;
-  border-bottom: 1px solid #999ec6;
+  /* border-bottom: 1px solid #999ec6;
   border-top: 1px solid #999ec6;
-  border-left: 1px solid #999ec6;
+  border-left: 1px solid #999ec6; */
+
+  border-bottom: 1px solid #7627bb;
+  border-top: 1px solid #7627bb;
+  border-left: 1px solid #7627bb;
   border-radius: 50px 0px 0px 50px;
   cursor: pointer;
   left: 0;
 }
 
+.Navlink b:nth-child(1)
+{
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+
+.Navlink b:nth-child(1)::before
+{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #7627bb;
+}
+.Navlink  b:nth-child(2)
+{
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+.Navlink  b:nth-child(2)::before
+{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  background: #7627bb;
+}
+.navlink_active b:nth-child(1), .navlink_active b:nth-child(2)
+{
+  display: block;
+}
+
+
 .navlink_active .text, .navlink_active .icon
 {
-  color: #999ec6;
+  color: #7627bb;
 }
