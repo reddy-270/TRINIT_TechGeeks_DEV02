@@ -10,18 +10,13 @@ import {RiLockPasswordFill} from 'react-icons/ri';
 import {FaSignOutAlt} from 'react-icons/fa';
 
 export default function item_list(props) {
-
+  
     const style = {
         fontSize : '1.5rem',
         fontWeight : '500',
         color:"white",
         textDecoration: 'none',
         
-      }
-      const style1 = {
-        fontSize : '1.5rem',
-        paddingTop : '10px',
-        margin: '10px',
       }
   return (
     <div className='itemlist' style={{display : 'flex'}}>
@@ -30,15 +25,15 @@ export default function item_list(props) {
               <b></b>
               <li>
                 {
-                  props.id === "1" ? <span className='icon' style={style1}> <MdSpaceDashboard/></span> :
-                  props.id === "2" ? <span className='icon' style={style1}> <RiTeamFill/></span> :
-                  props.id === "3" ? <span className='icon' style={style1}> <GiRaiseZombie/></span> :
-                  props.id === "4" ? <span className='icon' style={style1}> <CgProfile/></span> :
-                  props.id === "5" ? <span className='icon' style={style1}> <RiLockPasswordFill/></span> :
-                  props.id === "6" ? <span className='icon' style={style1}> <FaSignOutAlt/></span> :
-                  <span className='icon' style={style1}> <FaSignOutAlt/></span>
+                  props.id === "1" ? <span className='itemlist_icon' > <MdSpaceDashboard/></span> :
+                  props.id === "2" ? <span className='itemlist_icon' > <RiTeamFill/></span> :
+                  props.id === "3" ? <span className='itemlist_icon' > <GiRaiseZombie/></span> :
+                  props.id === "4" ? <span className='itemlist_icon' > <CgProfile/></span> :
+                  props.id === "5" ? <span className='itemlist_icon' > <RiLockPasswordFill/></span> :
+                  props.id === "6" ? <span className='itemlist_icon' > <FaSignOutAlt/></span> :
+                  <span className='itemlist_icon' > <FaSignOutAlt/></span>
                 }
-                <span className='text'> {props.title} </span>
+                <span className='itemlist_text'> {props.title} </span>
               </li>
             </NavLink>
     </div>

@@ -73,7 +73,24 @@
 }
 
 
-.navlink_active .text, .navlink_active .icon
+.navlink_active .itemlist_text, .navlink_active .itemlist_icon
 {
   color: #7627bb;
+}
+.itemlist_icon
+{
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+@media screen and (max-width: 900px)
+{
+  .itemlist_icon
+  {
+    font-size: 1.8rem;
+  }
+  .itemlist_text 
+  {
+    display: none;
+  }
 }

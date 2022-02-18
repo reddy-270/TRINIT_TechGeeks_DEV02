@@ -18,11 +18,20 @@
     background-color: #7627bb;
     /* background-color: #6b6f8b; */
     /* background-color: #460e69; */
-    width: 300px;
+    width: 270px;
     height: 100vh;
     position: sticky;
     top: 0;
     overflow: hidden;
+    /* margin:5px 0px 0px 5px; */
+}
+
+@media screen and (max-width: 900px)
+{
+    .dashboard_body_side_bar
+    {
+        width: 120px;
+    }
 }
 .dashboard_body_body
 {

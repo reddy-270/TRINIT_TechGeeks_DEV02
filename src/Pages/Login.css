@@ -1,30 +1,31 @@
 .Login, .Register
 {
-  color: #6b6f8b;
+  color: #7627bb;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #e2e5ff;
+  background-color: #f3e5ff;
   padding: 20px;
 }
 
 .Forms
 {
   width: 300px;
-  border: 1px solid #e2e5ff;
+  border: 1px solid #f3e5ff;
   padding: 20px 5px;
   border-radius: 13px;
-background: #f0f2ff;
-box-shadow: inset 5px 5px 10px #ccced9,
-            inset -5px -5px 10px #ffffff;
+  /* border-radius: 21px; */
+  background: #f3e5ff;
+  box-shadow: inset 5px 5px 10px #d6cae0,
+              inset -5px -5px 10px #ffffff;
 }
 
 .Forms input{
     margin: 5px;
     padding: 12px;
     font-size: larger;
-    border:1px solid #ccc;
+    border:1px solid #f3e5ff;
     border-radius: 7px;
 }
 
@@ -32,6 +33,6 @@ box-shadow: inset 5px 5px 10px #ccced9,
   margin: 10px;
   padding: 7px;
   font-size: large;
-  border:1px solid #ccc;
+  border:1px solid #f3e5ff;
   border-radius: 7px;
 }
