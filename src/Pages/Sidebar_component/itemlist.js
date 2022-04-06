@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './itemlist.css';
-import {IoIosBug} from 'react-icons/io';
 import {MdSpaceDashboard} from 'react-icons/md';
 import {RiTeamFill} from 'react-icons/ri';
 import {GiRaiseZombie} from 'react-icons/gi';
@@ -14,7 +13,7 @@ export default function item_list(props) {
     const style = {
         fontSize : '1.5rem',
         fontWeight : '500',
-        color:"white",
+        color:"#4e3c5d",
         textDecoration: 'none',
         
       }

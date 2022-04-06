@@ -1,0 +1,17 @@
+.card
+{
+    width: 250px;
+    height: 150px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f3e5ff;
+    background-image: linear-gradient(to bottom right,  #fdfaff, #f3e5ff);
+
+}
+
+.card:hover
+{
+box-shadow:  5px 5px 8px #c7cae0,
+             -5px -5px 8px #fdffff;
+}

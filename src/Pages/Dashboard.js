@@ -3,13 +3,14 @@ import React, { useEffect } from 'react';
 import './Dashboard.css';
 import Sidebar from './Sidebar_component/sidebar';
 import Nav from './nav';
+import DashboardBugCard from './DashboardBugCard';
 function Dashboard() {
     
   const [data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   // fetching data using the get request
   useEffect(() => {
-    fetch('http://localhost:8080/api/v1/bugs/all', {
+    fetch('https://61fe7c6ba58a4e00173c9880.mockapi.io/Bugs', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -31,6 +32,8 @@ function Dashboard() {
     })
 
   }, []);
+
+  console.log(data);
   return (
 
       <div className="Dashboard">
@@ -42,91 +45,32 @@ function Dashboard() {
             <div>
               <Nav/>
               <br />
-              <br/>
+              <br />
             </div>
             <div>
               <h1>Pending Bugs</h1>
               <div className='dashboard_cards'>
-                <div className='card'>
-                  <h2>Bug : 1</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 2</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 3</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
               </div>
             </div>
             <div>
               <h1>Resolved Bugs</h1>
               <div className='dashboard_cards'>
-                <div className='card'>
-                  <h2>Bug : 1</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 2</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 3</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+
               </div>
             </div>
             <div>
               <h1>Resolved Bugs</h1>
               <div className='dashboard_cards'>
-                <div className='card'>
-                  <h2>Bug : 1</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 2</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 3</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h1>Resolved Bugs</h1>
-              <div className='dashboard_cards'>
-                <div className='card'>
-                  <h2>Bug : 1</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 2</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 3</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h1>Resolved Bugs</h1>
-              <div className='dashboard_cards'>
-                <div className='card'>
-                  <h2>Bug : 1</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 2</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
-                <div className='card'>
-                  <h2>Bug : 3</h2>
-                  <p>Description : This is Bug 1 from Web dev</p>
-                </div>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+                <DashboardBugCard name = {'1'} description = {'description : 1'} createdAt = {'20-02-2022'}/>
+
               </div>
             </div>
           </div>

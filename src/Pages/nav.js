@@ -13,8 +13,8 @@ export default function nav() {
   return (
         <div className="nav" style={style}>
             <div style={style1}>
-                <h4 style={{margin : '10px'}}><CgProfile /></h4>
-                <h4 style={{margin : '10px'}}> saibharat2002@gmail.com</h4>
+                <h4 style={{margin : '0px 10px 10px 10px'}}><CgProfile /></h4>
+                <h4 style={{margin : '0px 10px 10px 10px'}}> saibharat2002@gmail.com</h4>
             </div>
         </div>
   )

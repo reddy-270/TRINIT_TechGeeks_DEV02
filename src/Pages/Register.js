@@ -13,7 +13,29 @@ function Register() {
     const history = useHistory();
 
     const handleSubmit = async (event) => {
-      var count=0;
+
+        if (username.length < 4) {
+            alert('Username must be at least 4 characters long');
+            return;
+        }
+
+        if(Email.length < 4) {
+            alert('Email must be at least 4 characters long');
+            return;
+        }
+
+        if(Email.indexOf('@') === -1)  { alert('Email must contain @'); return;}
+        if(Email.indexOf('.') === -1)  { alert('Email must contain .'); return;}
+
+        if(Email.indexOf('@') > Email.indexOf('.'))  { alert('Email must contain @ before .'); return;}
+
+        if(Email.indexOf('@') <=3)  { alert('Email must contain @ atleast after 3 characters'); return;}
+        
+        if (Password.length < 6) {
+            alert('Password must be at least 6 characters long');
+            return;
+        }
+        var count=0;
         event.preventDefault();
         const details = { Email, Password, username, Role };
 
